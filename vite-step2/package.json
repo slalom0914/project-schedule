@@ -1,0 +1,25 @@
+{
+  "name": "vite-step1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "fullcalendar": "^6.1.20",
+    "moment": "^2.30.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.11.0"
+  }
+}
