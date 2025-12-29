@@ -1,0 +1,71 @@
+/* SchedulePage 전체 레이아웃 - 브라우저 전체 높이 사용 */
+.schedule-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header 영역 */
+.schedule-page-wrapper > header,
+.schedule-page-wrapper > nav:first-of-type {
+  flex-shrink: 0;
+}
+
+/* Main 영역 - 남은 공간 모두 차지 */
+.schedule-page-wrapper > main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 56px; /* Footer 높이만큼 padding (fixed-bottom 대응) */
+}
+
+/* FullCalendar 컨테이너 - main 영역을 꽉 채움 */
+.schedule-page-wrapper main .fc {
+  flex: 1;
+  height: 100% !important;
+  width: 100%;
+}
+
+/* FullCalendar 루트 요소 */
+.schedule-page-wrapper main .fc .fc-view-harness {
+  height: 100% !important;
+}
+
+/* Footer 영역 (fixed-bottom) */
+.schedule-page-wrapper > nav.navbar.fixed-bottom {
+  flex-shrink: 0;
+  z-index: 1030; /* Bootstrap navbar 기본 z-index */
+}
+
+/* 반응형 대응 - 모바일 */
+@media (max-width: 576px) {
+  .schedule-page-wrapper > main {
+    padding-bottom: 48px; /* 모바일에서 Footer 높이 조정 */
+  }
+}
+
+/* FullCalendar 헤더 스타일 조정 */
+.schedule-page-wrapper .fc-header-toolbar {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* FullCalendar 이벤트 및 셀 스타일 */
+.schedule-page-wrapper .fc-daygrid-day,
+.schedule-page-wrapper .fc-timegrid-col {
+  border-color: #dee2e6;
+}
+
+/* 스크롤바 숨김 (필요시) */
+.schedule-page-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.schedule-page-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+

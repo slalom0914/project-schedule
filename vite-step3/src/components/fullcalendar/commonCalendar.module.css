@@ -1,0 +1,63 @@
+/* fullcalendar.module.css */
+
+.modalForm {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: #794ff7;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.form-control {
+  font-size: 0.9rem;
+}
+
+.btn {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+.btn-outline-secondary {
+  color: #6e95f796;
+  border-color: #6e95f796;
+}
+
+.btn-outline-primary {
+  color: #fff;
+  background-color: #6e95f796;
+  border-color: #6e95f796;
+}
+
+.btn-outline-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+  
